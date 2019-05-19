@@ -1,0 +1,36 @@
+.vertical {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.black {
+    background-color: #b58863;
+    height: 100px ;
+    width: 100px;
+    outline: 1px solid black;
+}
+.black:nth-child(2n) {
+    background-color: #f0d9b5;
+}
+.white {
+    background-color: #f0d9b5;
+    height: 100px ;
+    width: 100px;
+    outline: 1px solid black;
+}
+.white:nth-child(2n) {
+    background-color: #b58863;
+}
+
+.letter {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.number {
+    margin-left: 5px;
+    line-height: 100px;
+}
+
+
