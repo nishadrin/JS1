@@ -7,9 +7,11 @@ function bascket(productsInBascket) {
     $bascketProduct.textContent = "Корзина пуста";
   } else {
     var sum = 0
+    var quantity = 0
     for (i in productsInBascket) {
       sum = sum + productsInBascket[i]["price"] * productsInBascket[i]["quantity"]
-      $bascketProduct.textContent = "В корзине: " + i + " товаров, на сумму: " + sum + " рублей."
+      quantity = quantity + productsInBascket[i]["quantity"]
+      $bascketProduct.textContent = "В корзине: " + quantity + " товаров, на сумму: " + sum + " рублей."
     }
   }
 
